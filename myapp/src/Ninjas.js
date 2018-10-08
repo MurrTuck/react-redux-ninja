@@ -1,8 +1,9 @@
 import React from "react";
+import "./Ninjas.css";
 
 const Ninjas = ({ ninjas, deleteNinja }) => {
   const ninjaList = ninjas.map(ninja => {
-    if (ninja.age > 29) {
+    if (ninja.age > 20) {
       return (
         <div className="ninja" key={ninja.id}>
           <div>Name: {ninja.name}</div>
